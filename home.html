@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="home.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="intro_bg">
+            <div class="header" id="link_header">
+                <ul class="nav">
+                    <li><a href="#link_header">HOME</a></li>
+                    <li><a href="#link_main_text0">ABOUT</a></li>
+                    <li><a href="#link_main_text1">SERVICE</a></li>
+                    <li><a href="#link_main_text2">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="intro_text">
+                <h1>경기경영고 전공 영어 대비</h1>
+                <h4 class="contents1">스마트콘텐츠과 전공 영어 대회 대비를 위한 웹페이지입니다.</h4>
+            </div>
+        </div>
+        <ul class="amount">
+            <li>
+                <div>
+                    <div class="contents1">설립</div>
+                    <div class="result" id="money"></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">학생(남)</div>
+                    <div class="result" id="howmany"></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">학생(여)</div>
+                    <div class="result" id="rich"></div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">교원</div>
+                    <div class="result" id="wasabi"></div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="main_text0" id="link_main_text0">
+            <h1>ABOUT</h1>
+            <div class="contents1">
+                우리는 전문직업인으로 당당하게 21세기 글로벌 시대를 이끌어 갈 리더로 성장할 겁니다.
+            </div>
+            <ul class="icons">
+                <li>
+                    <div class="icon_img"><img src="image/icon2.svg"></div>
+                    <div class="contents1_bold">프로그래밍</div>
+                    <div class="contents3">
+                        C, Python, Java등의 프로그래밍 언어를 배웁니다.
+                    </div>
+                    <div class="more" id="more" onclick="more()">MORE</div>
+                </li>
+                <li>
+                    <div class="icon_img"><img src="image/icon0.svg"></div>
+                    <div class="contents1_bold">컴퓨터 그래픽</div>
+                    <div class="contents3">
+                        포토샵, 일러스트레이터, 인디자인, XD, 프리미어, 애프터 이펙트를 배웁니다.
+                    </div>
+                    <div class="more" id="more" onclick="more()">MORE</div>
+                </li>
+                <li>
+                    <div class="icon_img"><img src="image/icon1.svg"></div>
+                    <div class="contents1_bold">자격증</div>
+                    <div class="contents3">
+                        한글, 파워포인트, 엑셀 등의 실무에서 사용할 자격증을 미리 겸비합니다.
+                    </div>
+                    <div class="more" id="more" onclick="more()">MORE</div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_text1" id="link_main_text1">
+            <h1>SERVICE</h1>
+            <div class="contents1">You will succeed!!!</div>
+            <div class="service">
+                <div class="food_photo">
+                    <img src="image/라이언.png" height="400" width="400">
+                </div>
+                <div class="contents3">
+                    <h2 >Write down the missing words.</h2>
+                    <button onclick="page()">page</button>
+                    <p id="P">P. 0</p>
+                    
+                    <p id="T">Try : 0</p>
+                    <p id="S">Success : 0</p>
+                    <p id="F">Fail : 0</p>
+                    <input type="text" id="inputValue" placeholder="Value" onkeydown="enterSave()" onkeyup="enterNextQ()"/>
+                    <button onclick="saveValue()">Submit</button>
+                    <button onclick="nextQ()">Create</button>
+                    <p id="Q"></p><br>
+                </div>
+            </div>
+
+            <div class="main_text2" id="link_main_text2">
+                <ul>
+                    <li>
+                        <div><h1>CONTACT</h1></div>
+                        <div>우리의 성장을 기대해 주세요</div>
+                        <div class="more2" id="demo" onclick="demo()">
+                            더 알아보기
+                        </div>
+                    </li>
+                    <li>
+                        <div></div>
+                    </li>
+                </ul>
+            </div>
+            <footer>
+                <div>
+                    만든이. 김겸 <br>
+                    Addr. 대한민국 경기도 부천시 우리집 123-4 <br>
+                    032-0000-0000<br>
+                    본 페이지는 유튜버 타모디자인TAMO님의 강의 영상을 참고하여 만들어졌습니다.
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
